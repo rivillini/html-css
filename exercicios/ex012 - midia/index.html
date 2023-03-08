@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos HTML</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midia/video.mp4" controls></video>
+    <h2>Outro método</h2>
+    <!--Foi colocado a imagem de capa e varios formatos para mais navegadores-->
+    <video width="300" poster="imagens/tamb.jfif" controls loop>
+    <source src="midia/video.mp4" type="video/mp4">
+    <source src="midia/video.webm" type="video/webm">
+    <source src="midia/video.ogv" type="video/ogv">
+    </video> <!--Esse metodo pode e vão consumir muito tráfego de dados. Muito cuidado com isso-->
+
+    <h1>Inserindo vídeo do YouTube</h1>
+    <iframe width="400" height="280" src="https://www.youtube.com/embed/Hr1UrJfzJ54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body><!--Esse é o melhor formato para economizar tráfego na hospedagem. Pode hospedar o vídeo no YouTube, clicar em compartinhar e incorporar-->
+</html>

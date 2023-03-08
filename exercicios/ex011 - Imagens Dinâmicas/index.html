@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture><!--ela parece uma imagem, mas permite que você crie vários scr (source), varias fontes-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/slipping away - dyalla.mp3" controls></audio>
+    <!--formatos: MP3 WAV OGG-->
+
+    <!--outra maneira abaixo-->
+    <audio>
+        <source src="midia/slipping away - dyalla.mp3" type="audio/mpeg"><!--1º vai tentar esse-->
+        <source src="midia/slipping away - dyalla.ogg" type="audio/ogg"><!--2º esse-->
+        <source src="midia/slipping away - dyalla.wav" type="audio/wav"><!--3º esse-->
+        <p>Infelizmente não foi possível reproduzir pelo seu navegador, <a href="midia/slipping away - dyalla.mp3">clique aqui</a> para baixar a música</p><!--se não conseguir irá aparecer ess msg-->
+    </audio>
+
+<h1>Reproduzindo Vídeos</h1>
+<p>Vamos agora mostrar como reproduzir Vídeos</p>
+
+</body>
+</html>
